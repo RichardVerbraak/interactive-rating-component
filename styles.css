@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+
+    background-color: hsl(216, 12%, 8%);   
+}
+
+.rating {    
+    background: radial-gradient(circle at top, rgba(124,135,152, .25) 5%, rgba(37,45,55,1) 51%);
+    border-radius: 4rem;   
+    width: 55rem;
+}
+
+.rating-content {
+    display: flex;
+    gap: 4rem;
+
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.rating__header {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.rating__sub {
+    color:hsl(217, 12%, 63%);
+    font-size: 1.5rem;
+
+    width: 70%;   
+}
+
+.rating__ratings {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+    font-size: 1.5rem;
+}
+
+.circle {
+    display: inline-block;
+    text-align: center;
+
+    background-color: hsl(220, 11%, 22%);
+    height: 6rem;
+    width: 6rem;
+
+    border-radius: 50%;
+    padding: 2rem;
+
+    color:hsl(216, 12%, 54%);
+    font-weight: bold;
+
+    outline-color: none;
+    border: none;
+}
+
+.rating__choice:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.rating__choice:focus {
+    background-color: hsl(217, 12%, 63%);
+    color:#fff;
+}
+
+.rating__submit {
+    background-color: hsl(25, 97%, 53%);
+
+    color: #fff;
+    font-family: 'Overpass';
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+    border: none;
+    border-radius: 4rem;
+
+    width: 100%;
+    padding: 2rem;
+}
+
+.rating__submit:hover {
+    background-color: #fff;
+    color:  hsl(25, 97%, 53%);
+    transition: all .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.thank-you {
+    display: flex;
+    gap: 2.5rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem 0rem;    
+}
+
+.thank-you__image {
+    display: block;
+    object-fit: contain;
+    width: 15rem;
+    height: 15rem;
+}
+
+.thank-you__selection {
+    background-color: hsl(220, 11%, 22%);
+    border-radius: 1.5rem;
+    padding: .5rem 2rem;
+    color: hsl(25, 97%, 53%);
+    font-size: 1.4rem;
+
+    margin-bottom: 2rem;
+
+    letter-spacing: 1px;   
+}
+
+.thank-you__header {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.thank-you__subtext {
+    color: hsl(217, 12%, 63%);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 65%;
+}
